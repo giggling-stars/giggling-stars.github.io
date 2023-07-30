@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/html" href="blog.html"?>
+<rss version="2.0">
+	
+<channel>
+	<title>Speepy's General Updates</title>
+	<link>https://speepy.neocities.org</link>
+	<description>Random thoughts</description>
+	
+	<item>
+		<title>RSS Test</title>
+		<description>This should have a text!</description>
+	</item>
+	
+</channel>
+</rss> 
