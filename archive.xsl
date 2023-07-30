@@ -4,14 +4,31 @@
 <html>
 	<head>
 		<title> Speepy Updates </title>
+
+		<style>
+		table {
+		width: 100%;
+		position: center;
+		}
+
+		</style>
 	</head>
 	<body>
 		<h1> Speepy's General Stupid Updates</h1>	
 		<xsl:for-each select="/rss/channel/item">
+		<table>
+			<tr>
+			<td> <img src="pfp.png" width="30" height="30" style="border-radius: 25px"/> </td>
+			<td> ryn </td>
+			<td> @speepytimes </td>
+			</tr>
+			<tr>
+			<td> </td>
+			<td rowspan="2"> <xsl:value-of select="content"/> </td>
+			</tr>
 			
-			 <img src="pfp.png" width="30" height="30" style="border-radius: 25px"> </img> <h2 style="display: inline-block"> ?nbsp; ryn </h2> <h3 style="color:khaki; display: inline-block"><em>?nbsp; @speepytimes </em></h3>
-		<br/>
-			<xsl:value-of select="content"/>
+		</table>
+			
 		</xsl:for-each>
 	</body>
 		
