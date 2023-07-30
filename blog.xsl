@@ -3,7 +3,7 @@
 <xsl:template match="/">
 <html>
 	<head>
-		<title> </title>
+		<title> Speepy's General Stupid Updates </title>
 	</head>
 	<body>
 		<h1> This is a test</h1>	
