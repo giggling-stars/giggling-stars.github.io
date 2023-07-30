@@ -3,13 +3,13 @@
 <xsl:template match="/">
 <html>
 	<head>
-		<title> Speepy's General Stupid Updates </title>
+		<title> Speepy Updates </title>
 	</head>
 	<body>
-		<h1> This is a test</h1>	
+		<h1> Speepy's General Stupid Updates</h1>	
 		<xsl:for-each select="/rss/channel/item">
 			
-			<h2> <xsl:value-of select="title"/> </h2>
+			 <img src="pfp.png" width="100" height="100">  <h2> ryn </h2> <em> @speepytimes </em>
 			<xsl:value-of select="content"/>
 		</xsl:for-each>
 	</body>
