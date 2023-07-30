@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<?xml-stylesheet type="text/xsl" href="/blog.xsl"?>
+<?xml-stylesheet type="text/xsl" href="/archive.xsl"?>
 <rss version="2.0">
 	
 <channel>
 	<title>Speepy's General Updates</title>
-	<link>https://speepy.neocities.org</link>
+	<link>https://giggling-stars.github.io/archive</link>
 	<description>Random thoughts</description>
 	
 	<item>
