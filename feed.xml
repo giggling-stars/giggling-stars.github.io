@@ -6,6 +6,13 @@
 	<title>Speepy's General Updates</title>
 	<link>https://giggling-stars.github.io/archive</link>
 	<description>Random thoughts</description>
+	<item>
+		<title>RSS Test #2</title>
+		<description>
+		<p>This should have a text!</p>
+		<p> This should have multiple paragraphs </p>
+		</description>
+	</item>
 	
 	<item>
 		<title>RSS Test</title>
