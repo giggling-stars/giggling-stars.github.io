@@ -9,7 +9,8 @@
 		<h1> Speepy's General Stupid Updates</h1>	
 		<xsl:for-each select="/rss/channel/item">
 			
-			 <img src="pfp.png" width="50" height="50"> </img> <h2 style="display: inline-block"> ryn <em> @speepytimes </em> </h2>
+			 <img src="pfp.png" width="50" height="50"> </img> <h2 style="display: inline-block"> ryn </h2> <h3 style="color:khaki"><em> @speepytimes </em></h3>
+		<br/>
 			<xsl:value-of select="content"/>
 		</xsl:for-each>
 	</body>
