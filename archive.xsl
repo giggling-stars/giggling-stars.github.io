@@ -7,8 +7,9 @@
 
 		<style>
 		table {
-		width: 100%;
-		position: center;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
 		}
 
 		</style>
