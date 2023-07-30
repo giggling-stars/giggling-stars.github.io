@@ -7,7 +7,7 @@
 
 		<style>
 		table {
-		width: 90%;
+		width: 50%;
 		margin-left: auto;
 		margin-right: auto;
 		border: solid 1px;
@@ -22,7 +22,7 @@
 			<tr>
 			<td> <img src="pfp.png" width="30" height="30" style="border-radius: 25px"/> </td>
 			<td> <strong> ryn &#160; </strong> </td>
-			<td width="90%" style="color:deeppink; font-style:italic"> @speepytimes </td>
+			<td style="color:deeppink; font-style:italic"> @speepytimes </td>
 			</tr>
 			<tr>
 			<td> </td>
