@@ -10,7 +10,7 @@
 		<xsl:for-each select="/rss/channel/item">
 			
 			<h2> <xsl:value-of select="title"/> </h2>
-			<p> <xsl:value-of select="description"/> <p>
+			<p> <xsl:value-of select="description"/> </p>
 		</xsl:for-each>
 	</body>
 		
