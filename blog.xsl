@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<h1> This is a test</h1>	
-		<xsl:for-each select="/channel/item">
+		<xsl:for-each select="/rss/channel/item">
 			
 			<p> <xsl:value-of select="title"/> </p>
 		
