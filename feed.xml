@@ -6,14 +6,10 @@
 	<title>Speepy's General Updates</title>
 	<link>https://giggling-stars.github.io/archive</link>
 	<description>Random thoughts</description>
-	<item>
-		<title>RSS Test #2</title>
-		<description> This should have a \n text!</description>
-	</item>
 	
 	<item>
 		<title>RSS Test</title>
-		<description>This should have a text!</description>
+		<content xml:lang="en" type="html"> <p>This should have a text! </p> </content>
 	</item>
 	
 </channel>
