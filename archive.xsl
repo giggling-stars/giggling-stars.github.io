@@ -19,12 +19,12 @@
 		<table>
 			<tr>
 			<td> <img src="pfp.png" width="30" height="30" style="border-radius: 25px"/> </td>
-			<td> ryn </td>
-			<td> @speepytimes </td>
+			<td> ryn &nbsp; </td>
+			<td width="90%" style="color:deeppink; font-style:italic"> @speepytimes </td>
 			</tr>
 			<tr>
 			<td> </td>
-			<td rowspan="2"> <xsl:value-of select="content"/> </td>
+			<td colspan="2"> <xsl:value-of select="content"/> </td>
 			</tr>
 			
 		</table>
