@@ -3,8 +3,9 @@
 <xsl:template match="/">
 <html>
 	<head>
+		
 		<title> Speepy Updates </title>
-
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<style>
 		.post {
 		border: 3px solid black;
