@@ -10,10 +10,9 @@
 		.post {
 		border: 3px solid black;
 		border-radius: 25px;
-		margin-left: auto;
-		margin-right: auto;
 		width: 50%;
 		padding: 2em;
+		margin: 1em auto 1em auto
 		}
 
 		h1 { 
