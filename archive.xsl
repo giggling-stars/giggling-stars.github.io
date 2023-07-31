@@ -25,7 +25,7 @@
 		<xsl:for-each select="/rss/channel/item">
 			<div class="post">
 			<p> <strong> ryn &#160; </strong> <span style="color:deeppink; font-style:italic"> @giggling-stars </span> </p>
-			<xsl:value-of select="content"/>
+			<p> <xsl:value-of select="content"/> </p>
 			</div>
 		</xsl:for-each>
 	</body>
