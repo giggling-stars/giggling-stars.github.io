@@ -7,20 +7,17 @@
 		<title> Speepy Updates </title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 		<style>
-		* {
-		text-align: center;
-		}
-		
 		.post {
 		border: 1px solid black;
-		border-radius: 0;
+		border-radius: 5px;
 		width: 50%;
 		padding: 5px;
-		margin: 5px auto auto 5px;
+		margin: 5px auto 5px auto;
+		position: center;
 		}
 
 		h1 { 
-		position: center;
+		text-align: center;
 		}
 		</style>
 	</head>
