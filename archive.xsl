@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 		<style>
 		.post {
-		border: 3px solid black;
+		border: 1px solid black;
 		border-radius: 25px;
 		width: 50%;
 		padding: 2em;
