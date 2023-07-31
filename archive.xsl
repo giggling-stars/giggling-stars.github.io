@@ -8,6 +8,8 @@
 		<style>
 		.post {
 		border: 3px solid black;
+		margin-left: auto;
+		margin-right: auto;
 		}
 		</style>
 	</head>
