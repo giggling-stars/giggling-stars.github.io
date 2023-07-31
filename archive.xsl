@@ -15,6 +15,10 @@
 		width: 50%;
 		padding: 2em;
 		}
+
+		h1 { 
+		position: center;
+		}
 		</style>
 	</head>
 	<body>
