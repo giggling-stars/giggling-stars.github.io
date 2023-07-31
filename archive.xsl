@@ -22,7 +22,7 @@
 		</style>
 	</head>
 	<body>
-		<h1> Speepy's General Stupid Updates</h1>	
+		<h1> Ryn's Random Ramblins</h1>	
 		<xsl:for-each select="/rss/channel/item">
 			<div class="post">
 			<p> <strong> ryn &#160; </strong> <span style="color:darkgreen; font-style:italic"> rynhiddenwell@gmail.com </span> </p>
