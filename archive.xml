@@ -9,7 +9,7 @@
 	
 	<item>
 		<title>RSS Test #2</title>
-		<content xml:lang="en" type="text/html">
+		<content>
 <p>Rss feeds everywhere holy cow!</p> <br/>
 <p> can we get a second paragraph yo? </p>
 </content>
@@ -18,7 +18,7 @@
 
 	<item>
 		<title>RSS Test</title>
-		<content xml:lang="en" type="html"> <p>Me? Making my own fake social media feed? Couldn't be hehe </p> </content>
+		<content> <p>Me? Making my own fake social media feed? Couldn't be hehe </p> </content>
 	</item>
 	
 </channel>
