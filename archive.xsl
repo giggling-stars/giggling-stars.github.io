@@ -12,7 +12,6 @@
 	<body>
 		<h1> Speepy's General Stupid Updates</h1>	
 		<xsl:for-each select="/rss/channel/item">
-			<img src="pfp.png" width="30" height="30" style="border-radius: 25px"/>
 			<p> <strong> ryn &#160; </strong> <span style="color:deeppink; font-style:italic"> @giggling-stars </span> </p>
 			<xsl:value-of select="content"/>
 		</xsl:for-each>
