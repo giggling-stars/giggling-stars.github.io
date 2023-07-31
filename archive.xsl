@@ -9,7 +9,7 @@
 		<style>
 		.post {
 		border: 1px solid black;
-		border-radius: 5px;
+		border-radius: 0;
 		width: 50%;
 		padding: 0;
 		margin: 0;
