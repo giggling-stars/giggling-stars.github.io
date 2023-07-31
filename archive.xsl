@@ -11,8 +11,8 @@
 		border: 1px solid black;
 		border-radius: 0;
 		width: 50%;
-		padding: 0;
-		margin: 0;
+		padding: auto;
+		margin: auto;
 		}
 
 		h1 { 
