@@ -12,7 +12,7 @@
 		border-radius: 0;
 		width: 50%;
 		padding: 5px;
-		margin: 5px;
+		margin: 5px auto auto 5px;
 		}
 
 		h1 { 
