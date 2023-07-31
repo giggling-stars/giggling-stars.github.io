@@ -6,31 +6,16 @@
 		<title> Speepy Updates </title>
 
 		<style>
-		table {
-		width: 50%;
-		margin-left: auto;
-		margin-right: auto;
-		border: solid 1px;
-		}
 
 		</style>
 	</head>
 	<body>
 		<h1> Speepy's General Stupid Updates</h1>	
 		<xsl:for-each select="/rss/channel/item">
-		<table>
-			<tr>
-			<td> <img src="pfp.png" width="30" height="30" style="border-radius: 25px"/> </td>
-			<td> <strong> ryn &#160; </strong> </td>
-			<td style="color:deeppink; font-style:italic"> @speepytimes </td>
-			</tr>
-			<tr>
-			<td> </td>
-			<td colspan="2"> <xsl:value-of select="content"/> </td>
-			</tr>
-			
-		</table>
-			
+			<img src="pfp.png" width="30" height="30" style="border-radius: 25px"/>
+			<p> <strong> ryn &#160; </strong> <span style="color:deeppink; font-style:italic"> @giggling-stars </span> </p>
+			<br/>
+			<xsl:value-of select="content"/>
 		</xsl:for-each>
 	</body>
 		
