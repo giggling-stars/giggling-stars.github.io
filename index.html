@@ -3,10 +3,12 @@
 <head>
  <title> Speepy Archive </title>
   <style>
-  .item1 {grid-area: blog;}
-  .item2 {grid-area: archive;}
+  .item {
+   flex-grow: 1;
+  }
     .grid-container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid:
      'blog archive'
      'blog archive';
@@ -21,11 +23,11 @@
 <body>
 <div class="grid-container">  
   
-  <div class="item1">
+  <div class="item">
     <iframe src="archive.xml" xslt="archive.xsl"> </iframe>
   </div>
   
-  <div class="item2">
+  <div class="item">
     <p> This is where I will archive my websites! </p>
   </div>
   
