@@ -14,6 +14,7 @@
 
 		.flex-item {
 			flex: 1;
+			border: solid 1px;
 		}
 		h1 { 
 			text-align: center;
@@ -29,7 +30,7 @@
  			 background-color: #fff7cf
 		}
 		th, td {
-		padding-left: 2em;
+		padding-left: 1em;
 		}
 		</style>
 	</head>
