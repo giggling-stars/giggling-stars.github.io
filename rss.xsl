@@ -44,6 +44,7 @@
 		<div class="flex">
 			<div class="flex-item blog">
 				<h1> Ryn's Random Ramblins</h1>	
+				<h2> rss feed can be accessed here: giggling-stars.github.io/rss.xml</h2>
 				<xsl:for-each select="/rss/channel/item">
 					<p> <strong> ryn &#160; </strong> <span style="color:darkgreen; font-style:italic"> rynhiddenwell@gmail.com </span> </p>
 					<p> <xsl:value-of select="content"/> </p>
