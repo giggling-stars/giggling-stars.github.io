@@ -15,6 +15,11 @@
 		h1 { 
 			text-align: center;
 		}
+
+		table {
+			border: 1px;
+			text-align: left; 
+		}
 		</style>
 	</head>
 	<body>
