@@ -28,7 +28,7 @@
 		tr:nth-child(even) {
  			 background-color: #fff7cf
 		}
-		tr {
+		th, td {
 		padding-left: 2em;
 		}
 		</style>
