@@ -17,7 +17,7 @@
 		}
 
 		table {
-			border: 1px;
+			border: solid 1px;
 			text-align: left; 
 		}
 		</style>
