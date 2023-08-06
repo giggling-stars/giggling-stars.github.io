@@ -10,6 +10,9 @@
 		.flex {
 			display: flex;
 			flex-direction: row;
+		}
+
+		.flex-item {
 			flex: 1;
 		}
 		h1 { 
