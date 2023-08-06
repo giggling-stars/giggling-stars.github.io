@@ -18,7 +18,14 @@
 
 		table {
 			border: solid 1px;
-			text-align: left; 
+			text-align: left;
+			
+		}
+		tr:nth-child(even) {
+ 			 background-color: #fff7cf
+		}
+		tr {
+		padding-left: 2em;
 		}
 		</style>
 	</head>
