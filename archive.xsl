@@ -18,14 +18,13 @@
 		.flex-item {
 			flex: 1;
 			border: solid 1px;
-			padding: 1em;
+			margin: 1em;
 		}
 		h1 { 
 			text-align: center;
 		}
 
 		table {
-			border: solid 1px;
 			text-align: left;
 			width: 100%;
 			
