@@ -19,7 +19,6 @@
 			flex: 1;
 			border: solid 1px;
 			margin: 2px;
-			padding: 1em;
 		}
 		h1 { 
 			text-align: center;
@@ -40,6 +39,7 @@
 		blog {
 			height: 100vh;
 			overflow-y: scroll;
+			padding: 1em;
 		}
 		</style>
 	</head>
