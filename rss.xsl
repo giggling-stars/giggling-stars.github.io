@@ -20,9 +20,6 @@
 			border: solid 1px;
 			margin: 2px;
 		}
-		h1 { 
-			text-align: center;
-		}
 
 		table {
 			text-align: left;
