@@ -19,6 +19,7 @@
 		table {
 			border: solid 1px;
 			text-align: left;
+			width: 100%;
 			
 		}
 		tr:nth-child(even) {
