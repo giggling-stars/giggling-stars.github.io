@@ -36,7 +36,7 @@
 			padding-left: 1em;
 		}
 
-		blog {
+		.blog {
 			height: 100vh;
 			overflow-y: scroll;
 			padding: 1em;
