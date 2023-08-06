@@ -7,6 +7,9 @@
 		<title> Speepy Updates </title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 		<style>
+		body {
+			background-color: lightpink;
+		}
 		.flex {
 			display: flex;
 			flex-direction: row;
@@ -26,8 +29,8 @@
 			width: 100%;
 			
 		}
-		tr:nth-child(even) {
- 			 background-color: #fff7cf
+		tr:nth-child(odd) {
+ 			 background-color: white;
 		}
 		th, td {
 			padding-left: 1em;
