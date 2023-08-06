@@ -18,7 +18,8 @@
 		.flex-item {
 			flex: 1;
 			border: solid 1px;
-			margin: 1em;
+			margin: 2px;
+			padding: 1em;
 		}
 		h1 { 
 			text-align: center;
