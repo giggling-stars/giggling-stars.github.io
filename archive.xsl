@@ -30,7 +30,12 @@
  			 background-color: #fff7cf
 		}
 		th, td {
-		padding-left: 1em;
+			padding-left: 1em;
+		}
+
+		blog {
+			height: 100vh;
+			overflow-y: scroll;
 		}
 		</style>
 	</head>
