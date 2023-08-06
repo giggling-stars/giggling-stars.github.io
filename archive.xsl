@@ -18,6 +18,7 @@
 		.flex-item {
 			flex: 1;
 			border: solid 1px;
+			padding: 1em;
 		}
 		h1 { 
 			text-align: center;
@@ -30,7 +31,7 @@
 			
 		}
 		tr:nth-child(odd) {
- 			 background-color: white;
+ 			 background-color: #ff66a8;
 		}
 		th, td {
 			padding-left: 1em;
