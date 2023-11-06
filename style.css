@@ -1,3 +1,214 @@
+html {
+	min-height:100%;position:relative;
+}
+
+menu {
+	background-color: black;
+	width: 100%;
+	padding: 1em;
+	margin: 0;
+	top: 0;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	color: white;
+	z-index: 2;
+	text-decoration: underline;
+}
+
+label {
+	cursor: pointer;	
+}
+
+menu a {
+	text-decoration: none;	
+}
+
+body {
+	margin: 0;
+	background-image: url("background.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;	
+	font-family: "Lucida Console", "Courier New", monospace;
+	image-rendering: crisp-edges;
+}
+
+main {
+	color: white;
+	max-width:70%;
+	min-width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto auto;
+	justify-content: space-around;
+	gap: 1em;	
+}
+
+.mobile-only {
+	display: none;
+}
+
+header, section {
+	background-color: black;
+	border-radius: 10px;
+	padding: 1em;
+}
+
+header {
+	border: 1px solid white;	
+}
+
+
+
+header {
+	margin-bottom: 1em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.nav {
+	grid-row-start: 1;
+	grid-row-end: span 2;	
+}
+
+#cbox {
+	grid-column-start: 2;	
+}
+
+
+img#pfp {
+	border-radius: 50%;
+	display: block;
+	margin: 1em;
+	max-width: 70%;
+	min-width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header span {
+	margin: 0 1em;	
+}
+
+.banner {
+	display: block;
+	width: 100%;
+	height: 100px;
+	padding: 1em 0;
+}
+
+.center {
+	display: block;
+	position: center;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+rss {
+	color: white;	
+	background-color: black;
+}
+
+rss date {
+	color: CornflowerBlue;	
+	font-weight: bold;
+}
+
+rss channel {
+	white-space: pre-line;
+}
+
+iframe {
+	border: none;	
+	width: 100%;
+}
+
+a {
+	color: inherit;	
+}
+
+a img:hover {
+	transform:scale(1.3);
+}
+
+img#pfp:hover {
+	transform: scale(1.1);	
+	cursor: pointer;
+}
+
+img , a {
+transition: all .1s ease-in-out; 	
+}
+
+a:hover {
+	color: darkseagreen;	
+}
+
+h1 {
+	color: cyan;
+}
+
+@media screen and (max-width: 800px) {
+	.mobile-hidden {
+		display: none;	
+	}
+	.mobile-only {
+		display: block;	
+	}
+	.grid {
+		display: block;
+	}
+	.grid section {
+		margin-bottom: 1em;	
+	}
+	
+	
+	header {
+		grid-template-columns: 1fr;	
+	}
+	#toggle:checked ~ .nav {
+	display: block;
+	margin: none;
+	top: 0;
+	margin-top: 1.5em;
+	position: absolute;
+	margin-left: -15%;
+ 	margin-right: -15%;
+	min-height: 100%;
+	width: 100%;
+	z-index:1
+	}
+}
+
+input[type="checkbox"] {
+	display: none;	
+}
+
+li, .links {
+				margin: 0px;
+				color: cyan;	
+				vertical-align: top;
+			}
+
+li:nth-child(even) {
+	color: CornflowerBlue;	
+}
+ul {
+				font-weight: bold;
+				list-style-type: none;
+				padding: 0; 
+				margin: 0; 
+			}
+
+
+/* -----old code under here!-----
+
 table {
 	table-layout: fixed;
 	text-align: left;
@@ -6,12 +217,6 @@ table {
 	width: 70%;
 	border-collapse: separate;
 	border-spacing: 1em .4em;
-}
-
-table.main {
-	border-spacing: 0;
-	border: 1px solid white;
-	border-radius: 10px;
 }
 
 td {
@@ -26,37 +231,11 @@ body {
 	background-image: url("background.jpg");
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 	font-family: "Lucida Console", "Courier New", monospace;
 }
 
-h1 {
-	color: CornflowerBlue;
-}
 
-a {
-	color: inherit;	
-}
-ul {
-	font-weight: bold;
-	list-style-type: none; /* Remove bullets */
-	padding: 0; /* Remove padding */
-	margin: 0; /* Remove margins */
-}
-
-.links li:nth-child(odd) {
-	color: cyan;	
-}
-
-.links li:nth-child(even) {
-	color: teal;	
-}
-
-img.pfp {
-	border-radius: 50%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 .banner {
 	display: block;
@@ -67,15 +246,16 @@ img.pfp {
 	margin-bottom: 1em;
 }
 
-.center {
+img.pfp {
 	display: block;
-	position: center;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
+	max-width: 50%;
+	min-width:200px;
 }
 
-@media screen and (max-width: 800px) {
+
+/* @media screen and (max-width: 800px) {
 table {
 	table-layout: fixed;
 	text-align: left;
@@ -95,4 +275,4 @@ td {
 	padding: 1em;
 	border-radius: 10px;
 	}
-}
+} */

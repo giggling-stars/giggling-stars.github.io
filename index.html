@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 
 
 	
 	<head>
-		<title> Omnumnums </title>
-		<link rel="stylesheet" href="style.css">
+		<title> Hey Boscha! </title>
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="icon" href="images/sprite.png" type="image/x-icon"/>
 	</head>
 	
 	<body>
-		<img class="banner" src="images/panlesbian.png">
 		
-		<table class="main">
-			<tr>
-				<td> <img class="pfp" src="images/pfp.jpg" width="70%"/></td>
-				<td>
-					<h1> OMNI (is sleepy...) </h1>
-					<p> Hi I like to make a lot of stuff (including this website) Have a click around!</p>
-					<span class="center">
-						<img src="buttons/githubpages.jpg"/> <img src="buttons/boschlow.png"/>
-						<a href="https://www.tumblr.com/giggling-stars"> <img src="buttons/tumblr.jpg"/> </a>
+		<menu class="mobile-only">
+			<label for="toggle"> QUICK LINKS </label>
+		</menu>
+		
+		
+		<main>
+			
+			<img class="mobile-hidden banner" src="images/panlesbian.png" aria-hidden="true"/>
+			
+				<header>
+					<span>
+						<audio id="sound1" src="sounds/heyboscha.mp3" preload="auto"></audio> <img onclick="document.getElementById('sound1').play();" id="pfp" src="images/pfp.png"/>
 					</span>
+					
+					<span>
+						<h1> DO WHAT YOU WANT FOREVER. </h1>
+
+						<p> Hi, I'm Willow! A 18 year old pan aro lesbian does stuff. I like boschlow, minecraft, crochet, rocks, and more! So I made a site for all of it! I tend to update on the 7th of each month. Have a click around!</p>
+						<p> <strong> Please consider bookmarking the site and following the RSS feed. And commenting. Thanks!</strong></p>
+
+						<span class="center">
+							<a role="button" href="https://decolonizepalestine.com/"><img src="buttons/palestine.webp" alt="pixel art palestine flag"/></a>
+							<img src="buttons/githubpages.jpg" alt="Powered by Github pages button"/> <a role="button" href="boschlowtxt/assets.html"> <img src="buttons/boschlow.png" alt="boschlow button"/> </a>
+							<a role="button" href="https://www.tumblr.com/giggling-stars"> <img src="buttons/tumblr.jpg" alt="tumblr button"/> </a>
+						</span>
+					</span>
+				</header>
+			
+		<div class="grid">
+			<section id="rss">
 				
+				<a href="rss.xml"> <h2> RSS UPDATES: </h2> </a>
+					<iframe src="rss.xml"></iframe>
+			
+			</section>
+			
+			<section id="cbox">
+				<h2> CHAT </h2>
+				 <iframe src="https://www3.cbox.ws/box/?boxid=3532901&boxtag=fDen4e" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+
+			</section>
+			<input type="checkbox" id="toggle">
+			<section class="mobile-hidden nav">
 				
-				</td>
-			</tr>
-		</table>
-		<br/>
-		<table>
-			<tr>
-				<td> <strong> QUICK LINKS </strong> </td>
-				<td> <strong> UPDATES: </strong> </td>
-			</tr>
-			<tr>
-			<td>
-				<ul class="links">
-					<li> Placeholder </li>
-					<li> placeholder </li>
-					<li> placeholder </li>
-					<li> placeholder </li>
-				<ul>
-			</td>
-			<td>
-				<ul>
-					<li> 29/10/2023 - Updated code so that the site layout actually responsive on mobile</li>
-					<li> 28/10/2023 - Made this website<li>
-				<ul>
-			</td>
-			<tr>
-		</table>
-				
+			<nav>
+				<h2> QUICK LINKS </h2>
+
+					<ul>
+						<li> <a href="boschlowtxt/assets.html"> Boschlowtxt (WIP) </a> </li>
+						<li> placeholder </li>
+						<li> placeholder </li>
+						<li> placeholder </li>
+					</ul>
+			</nav>
+			</section>
+			
+		</div>
+		</main>
 	</body>
-	
 </html>
