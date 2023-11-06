@@ -1,5 +1,5 @@
 html {
-	min-height:100%;position:relative;
+	min-height:100%;
 }
 
 menu {
@@ -168,6 +168,9 @@ h1 {
 		margin-bottom: 1em;	
 	}
 	
+	header section {
+		padding: .5em;	
+	}
 	
 	header {
 		grid-template-columns: 1fr;	
@@ -205,74 +208,3 @@ ul {
 				padding: 0; 
 				margin: 0; 
 			}
-
-
-/* -----old code under here!-----
-
-table {
-	table-layout: fixed;
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	width: 70%;
-	border-collapse: separate;
-	border-spacing: 1em .4em;
-}
-
-td {
-	padding: 1em;
-	border-radius: 10px;
-	background: black;
-	color: white;
-	
-}
-
-body {
-	background-image: url("background.jpg");
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	font-family: "Lucida Console", "Courier New", monospace;
-}
-
-
-
-.banner {
-	display: block;
-	height: 100px;
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 1em;
-}
-
-img.pfp {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 50%;
-	min-width:200px;
-}
-
-
-/* @media screen and (max-width: 800px) {
-table {
-	table-layout: fixed;
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	border-collapse: separate;
-	border-spacing: .1em;
-}
-.banner {
-	display: block;
-	height: 100px;
-	width: 100%;
-	margin-bottom: 1em;
-}	
-td {
-	padding: 1em;
-	border-radius: 10px;
-	}
-} */
