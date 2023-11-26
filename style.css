@@ -20,7 +20,8 @@
 
 body {
 	background-image: url("background_space.png");
-	background-size: cover;
+	background-size: contain;
+	background-position:center;
 	background-attachment: fixed;
 	/* make pixel art bg not blurry */
 	image-rendering: crisp-edges;
@@ -168,6 +169,7 @@ rss {
 /* FOR MOBILE */
 
 @media screen and (max-width: 800px) {
+	
 	
 main {
 	margin: 1em auto;
