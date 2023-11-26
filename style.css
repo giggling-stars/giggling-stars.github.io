@@ -51,7 +51,7 @@ header {
 
 main {
 	margin: 3em auto;
-	width: clamp(300px, 800px, 800px);	
+	width: clamp(200px, 800px, 800px);	
 }
 
 .rss, header, section {
@@ -173,6 +173,7 @@ rss {
 	
 main {
 	margin: 1em auto;
+	width: 90%;
 }
 	
 main .grid-container {
@@ -182,7 +183,7 @@ main .grid-container {
 
 .logo img {
 	height: auto;
-	width: 90vh;
+	width: auto;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 0;
