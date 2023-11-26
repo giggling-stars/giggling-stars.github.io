@@ -174,12 +174,14 @@ body {
 	}
 	
 main {
-	max-width: 80vw;
+	max-width: 70vw;
 }
 	
 main .grid-container {
 	grid-template-columns: 1fr;
 	grid-column: span 1;
+	grid-gap: 0;
+	grid-row-gap: 1em;
 }
 
 .logo img {
