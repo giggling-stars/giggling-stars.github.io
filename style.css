@@ -190,11 +190,15 @@ main .grid-container {
 }
 
 #my-stuff {
-	height: 300px;
+	font-size: 16px;
+	height: 70px;
+	background-size: 100vw;
 }
 	
 #other-stuff {
-	height: 300px;	
+	font-size: 16px;
+	height: 70px;
+	background-size: 100vw;
 }
 	
 }
