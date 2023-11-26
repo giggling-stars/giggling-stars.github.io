@@ -171,11 +171,6 @@ rss {
 @media screen and (max-width: 800px) {
 	
 	
-main {
-	margin: 1em auto;
-	width: 80%;
-}
-	
 main .grid-container {
 	grid-template-columns: 1fr;
 	grid-column: span 1;
