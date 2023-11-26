@@ -169,10 +169,12 @@ rss {
 /* FOR MOBILE */
 
 @media screen and (max-width: 800px) {
+body {
+	background-position: center;
+	}
+	
 main {
-	width: 80vw;
-	margin-left: none;
-	margin-right: none;
+	max-width: 80vw;
 }
 	
 main .grid-container {
