@@ -170,7 +170,9 @@ rss {
 
 @media screen and (max-width: 800px) {
 main {
-	width: 80vw;		
+	width: 80vw;
+	margin-left: none;
+	margin-right: none;
 }
 	
 main .grid-container {
