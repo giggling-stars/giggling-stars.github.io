@@ -16,6 +16,7 @@
 
 * {
 	font-family: "Arial", "Hyperlegible";
+  box-sizing: border-box;
 }
 
 body {
@@ -175,6 +176,9 @@ body {
 	
 main {
 	max-width: 70vw;
+	padding: auto;
+	margin: auto;
+	display: block;
 }
 	
 main .grid-container {
