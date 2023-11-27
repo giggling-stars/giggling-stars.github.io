@@ -42,7 +42,7 @@ body {
 .grid-container {
 	display: grid;
 	grid-row-gap: 1em;
-	margin: 1em;
+	margin: auto;
 }
 
 .window {

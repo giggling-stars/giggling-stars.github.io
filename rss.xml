@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/css" href="style.css"?>
 <rss version="2.0">
+	
+	<channel>
+		<date> 27/11/2023 </date>
+		<description>
+			Made the site mobile-first. Should now properly be working on mobile
+			
+		</description>
+	</channel>
+	
 	<channel>
 		<date> 26/11/2023 </date>
 		<description>
@@ -12,6 +21,7 @@
 			
 		</description>
 	</channel>
+	
 	<channel>
 		<date> 06/11/2023 </date>
 		<description>
