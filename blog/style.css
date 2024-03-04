@@ -11,17 +11,20 @@
 }
 
 html, body {
-	background-image: url("images/glyphs.png");
-	background-size: 150px;
+	background-image: url("background.png");
+	background-size: cover;
 	background-attachment: fixed;
 	margin-top: auto;
 }
+
+
 
 main {
 	background-color: white;	
 	height: auto;
 	width: clamp(320px, 100%);
 	padding: 1em;
+	font-size: 22px;
 }
 
 #description {
@@ -37,7 +40,6 @@ article {
 
 article p {
 	text-align: left;
-	color: darkgray;
 }
 
 h1 {
@@ -69,7 +71,7 @@ ul {
 /* for laptops */
 
 main {
-	width: clamp(320px, 800px, 800px);
+	width: clamp(320px, 100%, 800px);
 	height: 100%;
 	border-radius: 5px;
 	margin: auto;

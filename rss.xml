@@ -3,6 +3,15 @@
 <rss version="2.0">
 	
 	<channel>
+		<date> 04/03/2024 </date>
+		<description>
+			Updated MY STUFF page to work properly on mobile
+			+ Now page
+			
+		</description>
+	</channel>
+	
+	<channel>
 		<date> 22/02/2024 </date>
 		<description>
 			Added MY STUFF page (currently work in progress)
