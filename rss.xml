@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<rss version="2.0">
+	
+	<channel>
+		<date> 04/03/2024 </date>
+		<description>
+			Updated MY STUFF page to work properly on mobile
+			+ Now page
+			
+		</description>
+	</channel>
+	
+	<channel>
+		<date> 22/02/2024 </date>
+		<description>
+			Added MY STUFF page (currently work in progress)
+			+ Blog
+			
+		</description>
+	</channel>
+	
+	<channel>
+		<date> 27/11/2023 </date>
+		<description>
+			Made the site mobile-first. Should now properly be working on mobile
+			
+		</description>
+	</channel>
+	
+	<channel>
+		<date> 26/11/2023 </date>
+		<description>
+			Once again rewrote the main site.
+			
+			+ Changed layout
+			+ Added links page
+			- Removed chat
+			
+		</description>
+	</channel>
+	
+	<channel>
+		<date> 06/11/2023 </date>
+		<description>
+			Converted this list to an RSS feed so now you can get updated whenever the site updates!.
+
+			+ chatbox
+			+ title icon
+			+ more buttons
+			+ semantic html (hopefully)
+			+ more style/animations
+			+ easter eggs!
+			- removed herobrine
+			
+		</description>
+	</channel>
+	
+	<channel>
+		<date> 29/10/2023 </date>
+		<description>
+			Updated code so that the site layout is actually responsive on mobile.
+		</description>
+	</channel>
+	
+	<channel>
+		<date> 28/10/2023 </date>
+		<description>
+			Made this website.
+		</description>
+	</channel>
+	
+</rss>
