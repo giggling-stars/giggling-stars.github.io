@@ -77,6 +77,10 @@ iframe {
 	text-align: center;
 }
 
+footer {
+	padding: 1em;	
+}
+
 /* buttons */
 
 .buttons {
@@ -133,9 +137,9 @@ body {
 	
 main {
 	max-width: 70vw;
+	height: 100%;
 	padding: auto;
 	margin: auto;
-	display: block;
 }
 	
 main .grid-container {

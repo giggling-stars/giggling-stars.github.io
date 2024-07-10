@@ -1,83 +1,34 @@
 <!DOCTYPE html>
 <html>
-	
-	<meta lang="en"/>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-	<link rel="shortcut icon" href="favicon.png" />
-	
-	
-	<head>	
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>	
-		<link rel="stylesheet" href="style.css"/>	
-		<title> My Stuff - Giggling Stars </title>
-		
-		<style>
-			
-			li {
-			margin: .5em auto;
-			color: black;
-			padding: .2em;
-			border: 1px solid;
-			}
-			
-			li:hover {
-				color: green;
-			}
-			
-			@media screen and (min-width: 960px) {
-	
-	main {
-		width: 960px;
-		margin-left: auto;
-		margin-right: auto;
-		height: auto;
-		display: grid;
-		grid-template-columns: 1fr 2fr;
-		grid-gap: 1em;
-		background: none;
-	}
-	
-	section {
-		background-color: white;
-		padding: 1em;
-		border-radius: 5px;
-		height: auto;
-	}
-
-}
-		</style>
-		
-	</head>
-	
-	
-	<body>
-		<main>
-			<section class="grid-item">
-				
-				<header>
-					<h1> MY STUFF </h1>
-					<p> This is for my silly little blog posts as well as other subpages. </p>
-
-				</header>
-
-				<nav style="text-align: center">
-					<ul>
-						<li> <a href="ask.html"> <i class="fa fa-envelope-o"> </i> Send an ask </a> </li>
-						<li> <a href="all-blogs.html"> See all blog posts </a> </li>
-						<li> <a href="now.html"> Now </a> </li>
-					</ul>
-				</nav>
-				<p> <strong> THIS SITE IS UNDER CONSTRUCTION </strong> </p>
-			</section>
-			<section>
-			
-				<h2> Recent Blog Posts: </h2>
-					<article>		
-						<h3> <a href="post/first-post.html"> New blog woo! </a> </h3> <time> February 20, 2024 </time>
-						<p> This is a short description of a blog post</p>
-				</article>
-			</section>
-			</main>
-	</body>
+  <head>
+    <title>My Blog's Homepage</title>
+    <!-- The description is not directly visible on the page. But it can show up in certain places like search engines. Probably unnecessary for most pages in your blog. -->
+    <meta name="description" content="Zonelets is a scrappy blogging workflow designed to encourage creative fun on the internet!">
+    <!-- This specifies the favicon (little icon on the browser tab) -->
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
+    <!-- This helps our site look consistent across devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> 
+    <!-- Here's the link to our CSS stylesheet! -->
+    <link href="./style/style.css" rel="stylesheet" type="text/css" media="all">    
+  </head>
+  <body>
+    <div id="container">
+    <div id="header">This site requires JavaScript!</div>
+    <div id="content">    
+      
+      
+      <h1>Welcome to my blog!</h1>
+      
+      <p>It looks like ass rn because I'm just figuring out git</p>
+      
+      
+      <div id="recentpostlistdiv"></div>
+      
+    </div> <!-- end of div id="content" -->
+    <div id="footer"></div>
+    </div> <!-- end of div id="container" -->    
+  <!-- Here's the link to our JavaScript! -->
+  <script src="./script.js"></script>
+  </body>
 </html>
