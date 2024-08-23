@@ -1,136 +1,344 @@
+/* TO DO: 
+
+remove the invisible desktop link shit i was doin
+
+*/
+
 :root {
-	--bg: url("assets/stickers.png");	
+	--outline: 2px solid; 
+	--plain: white;
+	--bgc: #7a4c37;
+	--book-bgc: #521e0e;
+	--bg-image: url(assets/laura-price.jpg); 
+	--page-color: #EBE6BE;
+	--page-shadow: #7a6f5f;
+	
+/* polaroid stuff */
+	--bp: clamp(200px, 90%,400px);
+	--bpimg: clamp(200px, 85%,400px);
+	--pimg: clamp(100px, 80%, 80%);
+	--hrotate: 2deg;
+	--shadow: 0 4px 5px rgb(104, 104, 104);
+	--hovershadow: 0 30px 5px -20px rgba(104, 104, 104, 0.301);
 }
 
-/* MAIN */
+/* FONTS */
+
+@font-face {
+	font-family: WillowType;
+  src: url('fonts/cursive.otf');
+}
+
+@font-face {
+	font-family: handwriting;
+	src: url('fonts/handwriting.otf');
+}
+
+@font-face {
+	font-family: makeba;
+	src: url('fonts/Makeba.ttf');
+}
+
+/* General */
 
 html {
-	font-kerning: auto;
-	letter-spacing: 1px;
-	background-image: var(--bg);
-	background-size: 200px;
-	background-color: pink;
 	scroll-behavior: smooth;
-	 image-rendering: crisp-edges;
- image-rendering: -moz-crisp-edges;          /* Firefox */
- image-rendering: -o-crisp-edges;            /* Opera */
- image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
+	margin: none;
+	padding: none;
 }
+
+h1, h2 {
+	margin: 0px;
+	padding: 0px;
+}
+
+.wacky {
+	font-family: makeba;
+	font-size: clamp(50px, 5vw,5vw);
+	transform: rotate(-10deg);
+	text-transform: uppercase;
+	color: rgb(201, 255, 120);
+	-webkit-text-stroke: 2.5px black;
+	text-shadow: 7px 7px black;
+	position: static;
+}
+
+header {
+	font-family: handwriting;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
 
 body {
-	font-family: "sans serif";
-	display: block;
-	background-color: white;
-	margin: 1em auto;
-	max-width: 69%;
-	min-width: 320px;
+	font-family: cursive;
 	text-align: center;
-	font-size: 18px;
-	border: 5px solid black;
-	border-radius: 10px;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0px;
 }
 
-main {
-	max-width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-.right {
-	display: inline;
-	float: right;
-}
-
-h1 {
-	font-size: 22px;
-	background-color: pink;
-	padding: .5em 1em;
-	margin: 0;
-	text-align: left;
-	border-bottom: 2px solid;
-	overflow: hidden;
-}
-
-table {
-	table-layout: fixed;
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	width: inherit;
+p {
+	font-size: 28px;
+	font-family: handwriting;
+	color: rgb(66, 37, 37);
 }
 
 a {
 	color: inherit;
+	text-decoration: none;
 }
 
-td {
-	width: 50%;	
-	padding: 1em;
-	vertical-align: top;
+
+/* Modals */
+
+.modal {
+	display: none;
 }
 
-img.pfp {
-	border-radius: 50%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
+/* Photo Collage */
 
-th {
-	text-align: center;
-	font-size: 22px;
-}
-
-ul {
-	list-style-type: none; /* Remove bullets */
-	padding: 0; /* Remove padding */
-	margin: 0; /* Remove margins */
-}
-
-.tab-content {
-    display: none;
-}
-.tab-content:target {
-    display: block;
-}
-
-iframe {
+.collage img:first-child {
 	border: none;
-	position: absolute;
+}
+
+.collage img{
+	border-top: var(--outline);
+	object-fit: contain;
+	height: 33.33%;
+	display: block;
+}
+
+
+.collage {
+	border: var(--outline);
+	overflow: hidden;
+	height: 100%;
+	box-shadow: var(--shadow);
+}
+
+/* comics */
+
+.comic {
+	display: none;
+}
+
+
+/* Polaroid Pictures */
+
+.big-polaroid {
+	background-color: var(--plain);
+	display: inline-block;
+	width: var(--bp);
+	border: var(--outline);
+	margin: 1em;
+	box-shadow: var(--shadow);
+}
+
+.big-polaroid img, .polaroid img {
+	border: var(--outline);
+	margin: 1em .5em 0;
+}
+
+.big-polaroid img {
+	width: var(--bpimg);
+}
+
+.polaroid {
+	background-color: var(--plain);
+	border: var(--outline);
+	box-shadow: var(--shadow);
+	transition:all ease .2s;
+}
+
+.polaroid img {
+	width: var(--pimg);
+}
+
+
+/* For Mobile Only */
+@media only screen and (max-width: 900px) {
+
+	/* main */
+	body {
+		background: var(--page-color);
+		background-size: cover;
+		background-attachment: fixed;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	#book {
+		margin: 1em;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: .2em;
+		margin: 0 1em;
+	}
+
+	section:has(.big-polaroid) {
+		grid-column: span 2;
+	}
+
+	h1 {
+		font-size: 28px;
+	}
+
+	/* mobile modals */
+
+	.modal:target {
+		display: block;
+		height: 100vh;
+		background: black;
+		position: fixed;
+		z-index: 1000;
+		margin: 0px;
+		padding: 0px;
+		top: 0;
+		left: 0;
+	}
+
+	.modal img {
+		width: 100%;
+		margin: 2vh 0;
+	}
+
+
+} /* end of mobile stuff */
+  
+
+/* For PC only */
+
+@media only screen and (min-width: 900px) {
+
+	/* Book/Main Styling */
+
+	body {
+		background-image: var(--bg-image); 
+		background-size: cover;
+		background-attachment: fixed;
+}
+
+@keyframes loadPage {
+    0% {
+		transform: scaleX(90%);
+    }
+    100% {
+		transform: scaleX(100%);
+    }
+		} /* end of fade in */
+
+	#book {
+		background-color: var(--book-bgc);
+		box-shadow: 0px 10px 10px;
+		height: 100%;
+		margin: 2em clamp(2em, 5em, 5em);
+		padding: 0px;
+
+		animation: loadPage ease 0.8s;
+	}
+
+	#pages {
+		padding: 1em;
+		display: grid;
+		grid-template-columns: 1fr 1fr ;
+		border: var(--outline);
+	}
+
+	.page {
+		border: var(--outline);
+		padding: 2em;
+	}
+
+	.left-page {
+		background: var(--page-color);
+		box-shadow: inset -30px 0 50px -20px var(--page-shadow);
+	}
+	.right-page {
+		background: var(--page-color);
+		box-shadow: inset 30px 0 50px -20px var(--page-shadow);
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 25px;
+	}
+
+
+	/* Polaroid stuff */
+
+	.left-lean {
+		rotate: -5deg;
+	}
+
+	.right-lean {
+		rotate: 5deg;
+	}
+
+	.left { /* This is for which side of the page the polaroid goes*/
+		grid-column: 1 / span 2;
+	}
+
+	.right {
+		grid-column: 3 / span 2;
+	}
+	  
+	.polaroid:has(a):hover {
+		transform: scale(105%) translateY(-25px);
+		z-index: 10;
+		box-shadow: var(--hovershadow);
+	}
+	
+ /* Modal Stuff maybe */
+
+.modal {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.815);
+	z-index: 100;
+}
+
+.modal img {
+	height: 90%;
+	margin: 2vw;
+	animation: fadeIn ease-in-out .2s;
+}
+
+.modal:target {
+	display: block;
+	position: fixed;
 	top: 0;
 	left: 0;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
+ }
+
+ @keyframes fadeIn {
+	0% {
+		opacity: 0%;
+		transform: translateY(-30px);
+    }
+    100% {
+		opacity: 100%;
+		transform: translateY(0px);
+    }
+ }
+
+/* comics */
+
+.comic img {
+	width: 70%;
+	margin: 5em;
 }
 
-
-.container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 100%;
+.comic:target {
+	display: block;
+	border: 10px;
 }
 
-/* PAGES */
+ 
 
-.gallery {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
 
-.gallery img {
-	width: 200px;
-	height: 200px;
-	object-fit: cover;
-	transition-timing-function: ease-in-out;
-	transition: transform .2s;
-	padding: 1em;
-}
-
-.gallery img:hover {
-	transform: scale(1.1);
-}
+  } /* end of desktop stuff */

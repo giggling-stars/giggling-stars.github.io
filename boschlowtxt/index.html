@@ -4,22 +4,63 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 	
 	<head>
-		<title> BOSCHLOW FOREVER </title>
+		<title> The Boschlow Scrapbook </title>
 		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="assets/favicon.gif" type="image/gif" >
+		<script src="javascript.js"> </script>
 	</head>
 	
 	<body>
-		<h1>
-			<a href="../index.html"> giggling-stars </a> > Boschlow.txt  <span aria-hidden="true" class="right"> _ &#9633 X </span> 
-		</h1>
-				<nav>
-				<ul>
-					<li><a href="#landing">general.txt</a></li>
-					<li><a href="#tab2">art</a></li>
-					<li><a href="#tab3">fanfictions</a></li>
-				</ul>
-				</nav>
-			
+		<audio id="polaroid" src="sounds/page-turn.ogg"></audio>
+		<div id="book">
+			<div id="pages">
+				<!-- Welcome to my spaghetti code! Don't think you can find secrets here, it's only crappy code-->
+				
+				
+				<section class="left-page page">
+					<article class="big-polaroid">
+						<img src="assets/scrapbook.png"/>
+						<h1> The Boschlow Scrapbook </h1>
+					<p> A collection of fanart, fanfics, and other boschlow media.</p>
+					</article>
+					<p> This website is made by a fan, for fans. <strong style="text-transform: uppercase"> Not affiliated with Disney! </strong> </p>
+				</section> <!-- left page-->
+
+				<section class="right-page page grid">
+					
+					<article class="polaroid left-lean">
+						<a href="gallery/2024" > 
+						<img src="assets/scrapbook.png"/>
+						<h1> Gallery </h1>
+						</a>
+					</article>
+					
+					<p> Text </p>
+					<p> Text </p>
+
+					
+						<article class="polaroid right-lean">
+							<img src="assets/scrapbook.png"/>
+							<h1> Stories </h1>
+						</article>
+					
+					<article class="polaroid left-lean">
+						<img src="assets/scrapbook.png"/>
+						<h1> Shenanigans </h1>
+					</article>
+					
+					<p> Text </p>
+					
+					
+				</section> <!-- right page-->
+			</div> <!-- Pages-->
+		</div> <!-- Book-->
+		
+		
+		<a onclick="document.getElementById('candles').src='assets/candles_lit.png'">
+		<img src="assets/candles.png" id="candles">
+		</a>
+
 	</body>
 	
 </html>
